@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi · Tuntas Utang</title>
+<meta name="description" content="Kebijakan Privasi Tuntas Utang: data apa yang dipakai, untuk apa, dan bagaimana data Google kamu dilindungi.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+
+<header class="kepala">
+  <div class="wadah">
+    <a class="merek" href="./" aria-label="Tuntas Utang, beranda">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#F2B705"/><rect x="8" y="21" width="6" height="6" rx="2" fill="#1B2547"/><rect x="16" y="21" width="6" height="6" rx="2" fill="#1B2547"/><rect x="24" y="21" width="6" height="6" rx="2" fill="#1B2547" opacity=".5"/><path d="M31 24l4 4 7-8" fill="none" stroke="#1B2547" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Tuntas Utang
+    </a>
+    <nav class="navi" aria-label="Utama">
+      <a href="./">Beranda</a>
+      <a href="syarat.html">Syarat</a>
+    </nav>
+  </div>
+</header>
+
+<main class="dok">
+  <div class="wadah sempit">
+    <div class="bahasa"><a href="#id">Bahasa Indonesia</a><a href="#en">English</a></div>
+
+    <article id="id" lang="id">
+      <h1>Kebijakan Privasi</h1>
+      <p class="tgl">Berlaku sejak 9 Oktober 2026</p>
+
+      <div class="ringkas"><p><b>Ringkasnya:</b> catatan utangmu disimpan di satu file di Google Drive milikmu sendiri dan tidak pernah dikirim ke kami. Yang kami terima hanya alamat email akun Google kamu, untuk mengecek lisensi.</p></div>
+
+      <h2>Tentang layanan ini</h2>
+      <p>Tuntas Utang ("aplikasi") adalah aplikasi web untuk mencatat utang dan cicilan pribadi, dibuat dan dikelola oleh Tuntas ("kami"). Aplikasi berjalan di Google Apps Script atas nama akun Google pengguna yang membukanya. Kebijakan ini menjelaskan data apa yang dipakai aplikasi, untuk apa, dan di mana disimpan.</p>
+
+      <h2>Data yang diakses dari akun Google kamu</h2>
+      <p>Saat pertama kali membuka aplikasi, Google meminta izinmu. Berikut setiap izin dan kegunaannya:</p>
+      <table>
+        <thead><tr><th>Izin</th><th>Untuk apa</th></tr></thead>
+        <tbody>
+          <tr><td>Melihat, mengubah, membuat, dan menghapus hanya file Google Drive yang dibuat dengan aplikasi ini<br><code>drive.file</code></td><td>Membuat satu file <b>"Tuntas Utang — Data"</b> di Drive kamu dan menyimpan catatan utang, jadwal tagihan, pembayaran, dan pengaturan di dalamnya. Aplikasi tidak bisa melihat atau membuka file lain di Drive kamu.</td></tr>
+          <tr><td>Mengirim email atas nama kamu<br><code>script.send_mail</code></td><td>Mengirim email pengingat tagihan dari akunmu ke alamat yang kamu atur di halaman Pengaturan (awalnya alamat akunmu sendiri). Aplikasi tidak membaca, menghapus, atau mengelola email kamu.</td></tr>
+          <tr><td>Melihat alamat email utama akun Google kamu<br><code>userinfo.email</code></td><td>Mengecek status lisensi dan mengisi alamat tujuan pengingat.</td></tr>
+          <tr><td>Terhubung ke layanan eksternal<br><code>script.external_request</code></td><td>Mengirim alamat email akunmu dan nomor versi aplikasi ke server lisensi Tuntas, untuk mengecek apakah akun ini sudah membeli.</td></tr>
+          <tr><td>Mengizinkan aplikasi berjalan saat kamu tidak sedang membukanya<br><code>script.scriptapp</code></td><td>Memasang satu jadwal harian (sekitar pukul 07.00 WIB) yang memeriksa tagihan mendekati jatuh tempo dan mengirim email pengingat.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Di mana data disimpan</h2>
+      <ul>
+        <li><b>Catatan utangmu</b> (nama utang, kreditur, nominal, jadwal, pembayaran, pengaturan) disimpan hanya di file "Tuntas Utang — Data" di Google Drive kamu. File itu milikmu dan tidak dibagikan ke siapa pun. Kami tidak punya akses ke file itu.</li>
+        <li><b>ID file data</b> dan status lisensi disimpan di penyimpanan properti pengguna Google Apps Script, yang terikat ke akunmu dan hanya bisa dibaca saat aplikasi berjalan atas namamu.</li>
+        <li><b>Server lisensi</b> (Google Sheet milik Tuntas) menyimpan alamat email akunmu, waktu terakhir aplikasi mengecek lisensi, dan jumlah pengecekan.</li>
+      </ul>
+
+      <h2>Data pembelian</h2>
+      <p>Pembayaran diproses oleh Mayar (mayar.id). Saat pembayaran berhasil, kami menerima nama, alamat email, nomor HP (kalau diisi), produk, nominal, dan nomor transaksi. Data ini disimpan di Google Sheet milik Tuntas untuk mengaktifkan lisensi, mengirim email berisi link aplikasi, dan membantu kalau ada kendala. Kami tidak menerima data kartu atau rekening kamu.</p>
+
+      <h2>Yang tidak kami lakukan</h2>
+      <ul>
+        <li>Kami tidak menjual, menyewakan, atau membagikan data kamu kepada pihak lain.</li>
+        <li>Kami tidak memakai data kamu untuk iklan.</li>
+        <li>Kami tidak memakai data dari layanan Google untuk melatih model AI atau machine learning.</li>
+        <li>Tidak ada manusia di pihak kami yang membaca isi catatan utangmu.</li>
+      </ul>
+
+      <h2>Kebijakan Data Pengguna Layanan API Google</h2>
+      <p>Penggunaan dan pemindahan informasi yang diterima Tuntas Utang dari API Google ke aplikasi lain mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Kebijakan Data Pengguna Layanan API Google</a>, termasuk persyaratan Penggunaan Terbatas (Limited Use).</p>
+
+      <h2>Menghapus data</h2>
+      <ul>
+        <li>Untuk menghapus catatan utangmu, hapus file "Tuntas Utang — Data" dari Google Drive kamu lalu kosongkan Sampah.</li>
+        <li>Untuk mencabut semua izin aplikasi, buka <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>, pilih Tuntas Utang, lalu hapus aksesnya. Jadwal pengingat ikut berhenti.</li>
+        <li>Untuk menghapus data pembelian dan email kamu dari server lisensi, kirim email ke <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a>. Kami memprosesnya paling lambat 14 hari. Setelah dihapus, lisensi untuk akun itu tidak lagi aktif.</li>
+      </ul>
+
+      <h2>Keamanan</h2>
+      <p>Semua data disimpan di infrastruktur Google dan dikirim lewat koneksi terenkripsi (HTTPS). Akses ke server lisensi dibatasi pada akun pengelola Tuntas.</p>
+
+      <h2>Anak-anak</h2>
+      <p>Tuntas Utang ditujukan untuk pengguna berusia 18 tahun ke atas.</p>
+
+      <h2>Perubahan kebijakan</h2>
+      <p>Kalau kebijakan ini berubah, kami memperbarui tanggal di atas dan, untuk perubahan penting, memberi tahu pembeli lewat email.</p>
+
+      <h2>Kontak</h2>
+      <p>Pertanyaan tentang privasi: <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a></p>
+    </article>
+
+    <hr class="pemisah">
+
+    <article id="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="tgl">Effective October 9, 2026</p>
+
+      <div class="ringkas"><p><b>In short:</b> your debt records are stored in a single file in your own Google Drive and are never sent to us. The only thing we receive is your Google account email address, to check your license.</p></div>
+
+      <h2>About this service</h2>
+      <p>Tuntas Utang ("the app") is a web app for tracking personal debts and installments, built and operated by Tuntas ("we"). The app runs on Google Apps Script as the Google account of the person who opens it. This policy explains what data the app uses, why, and where it is stored.</p>
+
+      <h2>Google user data the app accesses</h2>
+      <p>The first time you open the app, Google asks for your permission. Each permission and what it is used for:</p>
+      <table>
+        <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>See, edit, create, and delete only the specific Google Drive files you use with this app<br><code>drive.file</code></td><td>Create one file named <b>"Tuntas Utang — Data"</b> in your Drive and store your debts, payment schedule, payments, and settings in it. The app cannot see or open any other file in your Drive.</td></tr>
+          <tr><td>Send email as you<br><code>script.send_mail</code></td><td>Send bill reminder emails from your account to the address you choose in Settings (by default, your own address). The app does not read, delete, or manage your email.</td></tr>
+          <tr><td>See your primary Google Account email address<br><code>userinfo.email</code></td><td>Check your license status and prefill the reminder address.</td></tr>
+          <tr><td>Connect to an external service<br><code>script.external_request</code></td><td>Send your account email address and the app version number to the Tuntas license server to check whether this account has purchased the app.</td></tr>
+          <tr><td>Allow this application to run when you are not present<br><code>script.scriptapp</code></td><td>Install one daily trigger (around 07:00 Jakarta time) that checks for bills that are coming due and sends the reminder email.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Where data is stored</h2>
+      <ul>
+        <li><b>Your debt records</b> (debt names, creditors, amounts, schedules, payments, settings) are stored only in the "Tuntas Utang — Data" file in your Google Drive. You own that file and it is not shared with anyone. We have no access to it.</li>
+        <li><b>The data file ID</b> and your license status are stored in Google Apps Script user properties, which are tied to your account and readable only while the app runs as you.</li>
+        <li><b>The license server</b> (a Google Sheet owned by Tuntas) stores your account email address, the time the app last checked the license, and the number of checks.</li>
+      </ul>
+
+      <h2>Purchase data</h2>
+      <p>Payments are processed by Mayar (mayar.id). When a payment succeeds, we receive your name, email address, phone number (if provided), product, amount, and transaction ID. We store this in a Google Sheet owned by Tuntas to activate your license, email you the app link, and provide support. We never receive your card or bank account details.</p>
+
+      <h2>What we do not do</h2>
+      <ul>
+        <li>We do not sell, rent, or share your data with third parties.</li>
+        <li>We do not use your data for advertising.</li>
+        <li>We do not use data obtained from Google services to develop, improve, or train AI or machine learning models.</li>
+        <li>No person on our side reads the contents of your debt records.</li>
+      </ul>
+
+      <h2>Google API Services User Data Policy</h2>
+      <p>Tuntas Utang's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>Deleting your data</h2>
+      <ul>
+        <li>To delete your debt records, delete the "Tuntas Utang — Data" file from your Google Drive and empty the Trash.</li>
+        <li>To revoke all of the app's permissions, go to <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>, select Tuntas Utang, and remove access. The daily reminder stops as well.</li>
+        <li>To delete your purchase data and email address from the license server, email <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a>. We process requests within 14 days. Once deleted, the license for that account is no longer active.</li>
+      </ul>
+
+      <h2>Security</h2>
+      <p>All data is stored on Google infrastructure and transmitted over encrypted connections (HTTPS). Access to the license server is limited to the Tuntas operator account.</p>
+
+      <h2>Children</h2>
+      <p>Tuntas Utang is intended for users aged 18 and over.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, we will update the date above and, for material changes, notify buyers by email.</p>
+
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a></p>
+    </article>
+  </div>
+</main>
+
+<footer class="kaki">
+  <div class="wadah">
+    <div>© 2026 Tuntas · <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a></div>
+    <nav aria-label="Kaki">
+      <a href="./">Beranda</a>
+      <a href="privasi.html">Kebijakan Privasi</a>
+      <a href="syarat.html">Syarat Penggunaan</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
