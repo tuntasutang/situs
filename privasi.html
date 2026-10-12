@@ -32,7 +32,7 @@
 
     <article id="id" lang="id">
       <h1>Kebijakan Privasi</h1>
-      <p class="tgl">Berlaku sejak 9 Oktober 2026</p>
+      <p class="tgl">Berlaku sejak 9 Oktober 2026 · diperbarui 10 Oktober 2026</p>
 
       <div class="ringkas"><p><b>Ringkasnya:</b> catatan utangmu disimpan di satu file di Google Drive milikmu sendiri dan tidak pernah dikirim ke kami. Yang kami terima hanya alamat email akun Google kamu, untuk mengecek lisensi.</p></div>
 
@@ -45,6 +45,7 @@
         <thead><tr><th>Izin</th><th>Untuk apa</th></tr></thead>
         <tbody>
           <tr><td>Melihat, mengubah, membuat, dan menghapus hanya file Google Drive yang dibuat dengan aplikasi ini<br><code>drive.file</code></td><td>Membuat satu file <b>"Tuntas Utang — Data"</b> di Drive kamu dan menyimpan catatan utang, jadwal tagihan, pembayaran, dan pengaturan di dalamnya. Aplikasi tidak bisa melihat atau membuka file lain di Drive kamu.</td></tr>
+          <tr><td>Membuat kalender sekunder, lalu melihat, membuat, mengubah, dan menghapus event di kalender itu<br><code>calendar.app.created</code></td><td>Membuat satu kalender <b>"Tuntas Utang"</b> di Google Calendar kamu dan mengisinya dengan jatuh tempo tagihan yang belum lunas, lengkap dengan notifikasi. Aplikasi tidak bisa melihat atau mengubah kalender lain milikmu. Fitur ini bisa dimatikan di halaman Pengaturan; saat dimatikan, kalender "Tuntas Utang" dihapus.</td></tr>
           <tr><td>Mengirim email atas nama kamu<br><code>script.send_mail</code></td><td>Mengirim email pengingat tagihan dari akunmu ke alamat yang kamu atur di halaman Pengaturan (awalnya alamat akunmu sendiri). Aplikasi tidak membaca, menghapus, atau mengelola email kamu.</td></tr>
           <tr><td>Melihat alamat email utama akun Google kamu<br><code>userinfo.email</code></td><td>Mengecek status lisensi dan mengisi alamat tujuan pengingat.</td></tr>
           <tr><td>Terhubung ke layanan eksternal<br><code>script.external_request</code></td><td>Mengirim alamat email akunmu dan nomor versi aplikasi ke server lisensi Tuntas, untuk mengecek apakah akun ini sudah membeli.</td></tr>
@@ -55,6 +56,7 @@
       <h2>Di mana data disimpan</h2>
       <ul>
         <li><b>Catatan utangmu</b> (nama utang, kreditur, nominal, jadwal, pembayaran, pengaturan) disimpan hanya di file "Tuntas Utang — Data" di Google Drive kamu. File itu milikmu dan tidak dibagikan ke siapa pun. Kami tidak punya akses ke file itu.</li>
+        <li><b>Jatuh tempo tagihan yang belum lunas</b> (nama utang, nominal, tanggal) disalin ke kalender "Tuntas Utang" di Google Calendar kamu kalau fitur Google Calendar aktif. Kalender itu milikmu dan hanya ada di akunmu.</li>
         <li><b>ID file data</b> dan status lisensi disimpan di penyimpanan properti pengguna Google Apps Script, yang terikat ke akunmu dan hanya bisa dibaca saat aplikasi berjalan atas namamu.</li>
         <li><b>Server lisensi</b> (Google Sheet milik Tuntas) menyimpan alamat email akunmu, waktu terakhir aplikasi mengecek lisensi, dan jumlah pengecekan.</li>
       </ul>
@@ -76,6 +78,7 @@
       <h2>Menghapus data</h2>
       <ul>
         <li>Untuk menghapus catatan utangmu, hapus file "Tuntas Utang — Data" dari Google Drive kamu lalu kosongkan Sampah.</li>
+        <li>Untuk menghapus event dari Google Calendar, matikan Google Calendar di halaman Pengaturan aplikasi (kalender "Tuntas Utang" ikut terhapus), atau hapus kalender itu langsung dari Google Calendar.</li>
         <li>Untuk mencabut semua izin aplikasi, buka <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>, pilih Tuntas Utang, lalu hapus aksesnya. Jadwal pengingat ikut berhenti.</li>
         <li>Untuk menghapus data pembelian dan email kamu dari server lisensi, kirim email ke <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a>. Kami memprosesnya paling lambat 14 hari. Setelah dihapus, lisensi untuk akun itu tidak lagi aktif.</li>
       </ul>
@@ -97,7 +100,7 @@
 
     <article id="en" lang="en">
       <h1>Privacy Policy</h1>
-      <p class="tgl">Effective October 9, 2026</p>
+      <p class="tgl">Effective October 9, 2026 · updated October 10, 2026</p>
 
       <div class="ringkas"><p><b>In short:</b> your debt records are stored in a single file in your own Google Drive and are never sent to us. The only thing we receive is your Google account email address, to check your license.</p></div>
 
@@ -110,6 +113,7 @@
         <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
         <tbody>
           <tr><td>See, edit, create, and delete only the specific Google Drive files you use with this app<br><code>drive.file</code></td><td>Create one file named <b>"Tuntas Utang — Data"</b> in your Drive and store your debts, payment schedule, payments, and settings in it. The app cannot see or open any other file in your Drive.</td></tr>
+          <tr><td>Make secondary Google calendars, and see, create, change, and delete events on them<br><code>calendar.app.created</code></td><td>Create one calendar named <b>"Tuntas Utang"</b> in the user's Google Calendar and fill it with the due dates of unpaid bills, with reminders. The app cannot see or change any other calendar. The feature can be turned off in Settings; turning it off deletes the "Tuntas Utang" calendar.</td></tr>
           <tr><td>Send email as you<br><code>script.send_mail</code></td><td>Send bill reminder emails from your account to the address you choose in Settings (by default, your own address). The app does not read, delete, or manage your email.</td></tr>
           <tr><td>See your primary Google Account email address<br><code>userinfo.email</code></td><td>Check your license status and prefill the reminder address.</td></tr>
           <tr><td>Connect to an external service<br><code>script.external_request</code></td><td>Send your account email address and the app version number to the Tuntas license server to check whether this account has purchased the app.</td></tr>
@@ -120,6 +124,7 @@
       <h2>Where data is stored</h2>
       <ul>
         <li><b>Your debt records</b> (debt names, creditors, amounts, schedules, payments, settings) are stored only in the "Tuntas Utang — Data" file in your Google Drive. You own that file and it is not shared with anyone. We have no access to it.</li>
+        <li><b>Due dates of unpaid bills</b> (debt name, amount, date) are copied to the "Tuntas Utang" calendar in your Google Calendar when the Google Calendar feature is on. That calendar is yours and exists only in your account.</li>
         <li><b>The data file ID</b> and your license status are stored in Google Apps Script user properties, which are tied to your account and readable only while the app runs as you.</li>
         <li><b>The license server</b> (a Google Sheet owned by Tuntas) stores your account email address, the time the app last checked the license, and the number of checks.</li>
       </ul>
@@ -141,6 +146,7 @@
       <h2>Deleting your data</h2>
       <ul>
         <li>To delete your debt records, delete the "Tuntas Utang — Data" file from your Google Drive and empty the Trash.</li>
+        <li>To remove the events from Google Calendar, turn off Google Calendar in the app's Settings (the "Tuntas Utang" calendar is deleted), or delete that calendar in Google Calendar.</li>
         <li>To revoke all of the app's permissions, go to <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>, select Tuntas Utang, and remove access. The daily reminder stops as well.</li>
         <li>To delete your purchase data and email address from the license server, email <a href="mailto:tuntas.apps@gmail.com">tuntas.apps@gmail.com</a>. We process requests within 14 days. Once deleted, the license for that account is no longer active.</li>
       </ul>
